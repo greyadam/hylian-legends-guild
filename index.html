@@ -23,22 +23,7 @@
         <title>Hylian Legends · Guild Headquarters</title>
         <script type="text/javascript" crossorigin="anonymous" async src="./scripts/array.js"></script><script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script
 
-  var BASE = "/";
-  var HMR_ENABLED = false;
-  var ROOT = "/app/frontend";
-  var RRWEB_MODE = "buffer";
-  // "hot" = vite custom-event channel; "http" = token-authenticated POSTs (craco/webpack).
-  var TRANSPORT = "http";
-  var TOKEN = "fc2307cba7cf5d52f090902675a4fb91";
-  // The bug FAB is a product surface with its own knob — recording and reporting
-  // work headlessly without it.
-  var FAB_MODE = "off";
-  // Opt-in for the fetch/XHR capture alone (EMERGENT_OVERLAY_NETWORK=on); absent or off leaves the
-  // natives untouched while the recorder and the button keep working.
-  var NETWORK_MODE = "off";
-  var MAX_ERRORS = 20;
-
-  var KINDS = {
+ 
     compile: { badge: "Build error", tone: "warn", headline: "The latest code change didn't compile" },
     runtime: { badge: "Runtime error", tone: "err", headline: "The app hit an error while running" },
     rejection: { badge: "Unhandled rejection", tone: "err", headline: "A background operation failed" },
